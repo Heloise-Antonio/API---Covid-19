@@ -1,0 +1,64 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos Covid-19</title>
+    <link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Projeto API COVID-19</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="intro-div">
+            <h3>Dados da API</h3>
+            <p>O objetivo deste exemplo é exibir os dados da COVID-19 utilizando gráficos dinâmicos consumidos via API REST.</p>
+        </div>
+
+        <div id="div-erro">...</div>
+
+        <div class="world-div">
+            <h2>Covid-19 pelo Mundo</h2>
+            <div id="grafico-mapa" class="area-grafico"></div>
+        </div>
+        
+        <div class="pizza-div">
+            <h2>Distribuição de Casos de COVID-19</h2>
+            <div id="grafico-pizza" class="area-grafico"></div> 
+        </div>
+
+        <div class="table-div">
+            <h3>Dados por Estado (Brasil)</h3>
+            <table id="tabela-estados">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th>Suspeitos</th>
+                        <th>Descartados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados serão preenchidos dinamicamente pela API -->
+                </tbody>
+            </table>
+        </div>      
+        <footer>
+            <p>&copy; 2024 Projeto COVID-19.</p>
+        </footer>  
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/Programação.js"></script>
+
+</body>
+</html>
